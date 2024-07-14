@@ -1,0 +1,32 @@
+h3 {
+    color: #FF5733; 
+}
+
+h2 {
+    color: #FF5733; 
+    font-family: 'Arial', sans-serif;
+    font-size: 30px;
+}
+
+b {
+    color: #5733FF; 
+}
+
+li {
+    font-style: italic;
+}
+
+dt, span {
+    color: #FF8C33;
+}
+
+ol#reversed-ol {
+    counter-reset: item-counter 4; /* Start counting from 4, which is one more than the number of items */
+}
+ol#reversed-ol li {
+    counter-increment: item-counter -1; /* Decrease the counter on each item */
+    list-style-type: none; /* Remove default numbering */
+}
+ol#reversed-ol li:before {
+    content: counter(item-counter) ". "; /* Add custom numbering before each item */
+}
