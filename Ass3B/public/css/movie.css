@@ -1,0 +1,152 @@
+body {
+  background: url('../media/rotten/background.png');
+  position: relative;
+  font-size: 8pt;
+  font-family: Verdana, Tahoma, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  background: url('../media/rotten/bannerbg.png');
+  height: 50px;
+}
+
+.header>img {
+  display: block;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.title {
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 24pt;
+  font-weight: bold;
+  font-family: Tahoma, Verdana, sans-serif;
+  text-shadow: 3px 3px #999999;
+}
+
+.main {
+  position: relative;
+  width: 800px;
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+  border: 4px gray solid;
+  border-radius: 20px;
+}
+
+.right-section {
+  width: 250px;
+  background: #A2B964;
+  float: right;
+  clear: both;
+  font-family: Arial, sans-serif;
+  font-size: 8pt;
+}
+
+.right-section>dl {
+  padding-left: 10pt;
+}
+
+.right-section>dl>dd {
+  margin-bottom: 10pt;
+  font-weight: bold;
+}
+
+.right-section>dl>dt {
+  font-weight: bold;
+  font-size: 10pt;
+}
+
+.links {
+  list-style-type: none;
+}
+
+.left-section {
+  position: relative;
+  width: 542px;
+  float: left;
+  clear: left;
+}
+
+.left-section-banner-container {
+  position: relative;
+  height: 83px;
+  line-height: 83px;
+  background: url('../media/rotten/rbg.png');
+}
+
+.left-section-banner-container>img {
+  position: relative;
+  height: 100%;
+}
+
+.left-section-banner-container>h2 {
+  display: inline-block;
+  font-size: 48pt;
+  color: red;
+  font-weight: bold;
+  vertical-align: middle;
+  padding-bottom: 70px;
+}
+
+.left-section>p {
+  border: gray 2px solid;
+  background: #E8DC9B;
+  font-size: 8pt;
+}
+
+.column-1,
+.column-2 {
+  width: 47%;
+}
+
+.column-1 {
+  float: left;
+  margin: 0 1%;
+
+}
+
+.column-2 {
+  float: left;
+}
+
+.cols img {
+  float: left;
+  margin-right: 5px;
+  clear: both;
+}
+
+.cols>p:nth-of-type(odd) {
+  background: #E8DC9B;
+  font-weight: bold;
+  font-size: 8pt;
+  border: 2px solid gray;
+  border-radius: 10px;
+  padding: 8px;
+  overflow: hidden;
+  margin: 10pt 5px 10pt 0;
+}
+
+.cols>p:nth-of-type(even) {
+  margin: 0pt 5px 20pt 0;
+}
+
+.pagination {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  padding: 5px;
+  width: 800px;
+  background: #A2B964;
+  text-align: center;
+  z-index: -1;
+}
+
+.validator {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
