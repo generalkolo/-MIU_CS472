@@ -1,0 +1,27 @@
+body {
+  height: 100vh;
+}
+
+footer {
+  height: 15%;
+}
+
+.grey {
+  background: rgb(207, 199, 199);
+}
+
+.bg-darkgray {
+  background: rgb(39, 66, 66);
+}
+
+.column-1 {
+  background: rgb(170, 143, 143);
+}
+
+.column-2 {
+  background: rgb(189, 176, 176);
+}
+
+.column-3 {
+  background: rgb(226, 213, 213);
+}
