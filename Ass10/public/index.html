@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Task list | Edet Ebenezer | Lesson 9</title>
+    <link rel="stylesheet" type="text/css" href="css/tasks.css" media="screen" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-templates@1.0.0/jquery.tmpl.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <span>Task list</span>
+    </header>
+    <main>
+        <section id="taskCreation" class="not">
+            <form>
+                <div>
+                    <label>Task</label>
+                    <input type="text" required="required" name="task" class="large"
+                        placeholder="e.g Basketball practice at Ebens" />
+                </div>
+                <div>
+                    <label>Required by</label>
+                    <input type="date" required="required" name="requiredBy" />
+                </div>
+                <div>
+                    <label>Category</label>
+                    <select name="category">
+                        <option value="Personal">Personal</option>
+                        <option value="Work">Work</option>
+                    </select>
+                </div>
+                <nav>
+                    <a href="#" id="saveTask">Save task</a>
+                    <a href="#" id="clearForm">Clear task</a>
+                </nav>
+            </form>
+        </section>
+        <section>
+            <table id="tblTasks">
+                <colgroup>
+                    <col width="40%">
+                    <col width="15%">
+                    <col width="15%">
+                    <col width="30%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Due</th>
+                        <th>Category</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+            <nav>
+                <a href="#" id="btnAddTask">Add task</a>
+                <a href="#" id="clearAllTasks">Clear all tasks</a>
+            </nav>
+        </section>
+    </main>
+    <footer>You have <span id="taskCount">0</span> tasks</footer>
+</body>
+<script src="js/script.js"></script>
+
+<script id="taskRow" type="text/x-jQuery-tmpl">
+<tr>
+<td>${task}</td>
+<td><time datetime="${requiredBy}"> ${requiredBy}</time></td>
+<td>${category}</td>
+<td>
+<nav>
+<a href="#">Edit</a>
+<a href="#" class"completeRow">Complete</a>
+<a href="#" class="deleteRow">Delete</a>
+</nav>
+</td>
+</tr>
+</script>
+
+</html>
